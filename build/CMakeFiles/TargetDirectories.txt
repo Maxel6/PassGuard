@@ -1,0 +1,3 @@
+/Users/Axel/PassGuard/build/CMakeFiles/PassGuard.dir
+/Users/Axel/PassGuard/build/CMakeFiles/edit_cache.dir
+/Users/Axel/PassGuard/build/CMakeFiles/rebuild_cache.dir

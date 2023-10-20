@@ -1,0 +1,3035 @@
+{
+	"entries" : 
+	[
+		{
+			"name" : "CMAKE_ADDR2LINE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_ADDR2LINE-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_AR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/ar"
+		},
+		{
+			"name" : "CMAKE_BUILD_TYPE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "STRING",
+			"value" : "Debug"
+		},
+		{
+			"name" : "CMAKE_CACHEFILE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "This is the directory where this CMakeCache.txt was created"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/Users/Axel/PassGuard/build"
+		},
+		{
+			"name" : "CMAKE_CACHE_MAJOR_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Major version of cmake used to create the current loaded cache"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "3"
+		},
+		{
+			"name" : "CMAKE_CACHE_MINOR_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Minor version of cmake used to create the current loaded cache"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "27"
+		},
+		{
+			"name" : "CMAKE_CACHE_PATCH_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Patch version of cmake used to create the current loaded cache"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "7"
+		},
+		{
+			"name" : "CMAKE_COLOR_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable/Disable color output during build."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
+		},
+		{
+			"name" : "CMAKE_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to CMake executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/cmake/3.27.7/bin/cmake"
+		},
+		{
+			"name" : "CMAKE_CPACK_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cpack program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/cmake/3.27.7/bin/cpack"
+		},
+		{
+			"name" : "CMAKE_CTEST_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to ctest program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/cmake/3.27.7/bin/ctest"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/clang++"
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the CXX compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the CXX compiler during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-g"
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the CXX compiler during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-Os -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the CXX compiler during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-O3 -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the CXX compiler during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-O2 -g -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_C_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/clang"
+		},
+		{
+			"name" : "CMAKE_C_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the C compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_C_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the C compiler during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-g"
+		},
+		{
+			"name" : "CMAKE_C_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the C compiler during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-Os -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_C_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the C compiler during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-O3 -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_C_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the C compiler during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-O2 -g -DNDEBUG"
+		},
+		{
+			"name" : "CMAKE_DLLTOOL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_DLLTOOL-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/cmake/3.27.7/bin/ccmake"
+		},
+		{
+			"name" : "CMAKE_EXECUTABLE_FORMAT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Executable file format"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "MACHO"
+		},
+		{
+			"name" : "CMAKE_EXE_LINKER_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXE_LINKER_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXE_LINKER_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "CMAKE_EXTRA_GENERATOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of external makefile project generator."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/Axel/PassGuard/build/CMakeFiles/pkgRedirects"
+		},
+		{
+			"name" : "CMAKE_GENERATOR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of generator."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "Unix Makefiles"
+		},
+		{
+			"name" : "CMAKE_GENERATOR_INSTANCE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Generator instance identifier."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_GENERATOR_PLATFORM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of generator platform."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_GENERATOR_TOOLSET",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Name of generator toolset."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_HOME_DIRECTORY",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Source directory with the top level CMakeLists.txt file for this project"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/Users/Axel/PassGuard"
+		},
+		{
+			"name" : "CMAKE_INSTALL_NAME_TOOL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/install_name_tool"
+		},
+		{
+			"name" : "CMAKE_INSTALL_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Install path prefix, prepended onto install directories."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local"
+		},
+		{
+			"name" : "CMAKE_LINKER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/ld"
+		},
+		{
+			"name" : "CMAKE_MAKE_PROGRAM",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/make"
+		},
+		{
+			"name" : "CMAKE_MODULE_LINKER_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of modules during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of modules during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of modules during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of modules during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of modules during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_NM",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/nm"
+		},
+		{
+			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "number of local generators"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_OBJCOPY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_OBJCOPY-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_OBJDUMP",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/objdump"
+		},
+		{
+			"name" : "CMAKE_OSX_ARCHITECTURES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Build architectures for OSX"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_OSX_DEPLOYMENT_TARGET",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Minimum OS X version to target for deployment (at runtime); newer APIs weak linked. Set to empty string for default value."
+				}
+			],
+			"type" : "STRING",
+			"value" : "12.6"
+		},
+		{
+			"name" : "CMAKE_OSX_SYSROOT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The product will be built against the headers and libraries located inside the indicated SDK."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk"
+		},
+		{
+			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Platform information initialized"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_PROJECT_DESCRIPTION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_PROJECT_HOMEPAGE_URL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_PROJECT_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "PassGuard"
+		},
+		{
+			"name" : "CMAKE_RANLIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/ranlib"
+		},
+		{
+			"name" : "CMAKE_READELF",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_READELF-NOTFOUND"
+		},
+		{
+			"name" : "CMAKE_ROOT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to CMake installation."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/cmake/3.27.7/share/cmake"
+		},
+		{
+			"name" : "CMAKE_SHARED_LINKER_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of shared libraries during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of shared libraries during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of shared libraries during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of shared libraries during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of shared libraries during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_SKIP_INSTALL_RPATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "If set, runtime paths are not added when installing shared libraries, but are added when building."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "NO"
+		},
+		{
+			"name" : "CMAKE_SKIP_RPATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "If set, runtime paths are not added when using shared libraries."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "NO"
+		},
+		{
+			"name" : "CMAKE_STATIC_LINKER_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of static libraries during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_STATIC_LINKER_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of static libraries during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of static libraries during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_STATIC_LINKER_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of static libraries during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_STRIP",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/strip"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/tapi"
+		},
+		{
+			"name" : "CMAKE_UNAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "uname command"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/bin/uname"
+		},
+		{
+			"name" : "CMAKE_VERBOSE_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "If this value is on, makefiles will be generated without the .SILENT directive, and all commands will be echoed to the console during the make.  This is useful for debugging only. With Visual Studio IDE projects all commands are done without /nologo."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "FALSE"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding OpenSSL"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/Cellar/openssl@3/3.1.3/lib/libcrypto.dylib][/usr/local/Cellar/openssl@3/3.1.3/include][c ][v3.1.3()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding PkgConfig"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/bin/pkg-config][v0.29.2()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding nlohmann_json"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.2()]"
+		},
+		{
+			"name" : "GTKMM_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/gtkmm3/3.24.8/include/gtkmm-3.0;-I/usr/local/Cellar/gtkmm3/3.24.8/lib/gtkmm-3.0/include;-I/usr/local/Cellar/atkmm@2.28/2.28.3/include/atkmm-1.6;-I/usr/local/Cellar/atkmm@2.28/2.28.3/lib/atkmm-1.6/include;-I/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0/unix-print;-I/usr/local/Cellar/gtkmm3/3.24.8/include/gdkmm-3.0;-I/usr/local/Cellar/gtkmm3/3.24.8/lib/gdkmm-3.0/include;-I/usr/local/Cellar/glibmm@2.66/2.66.6/include/giomm-2.4;-I/usr/local/Cellar/glibmm@2.66/2.66.6/lib/giomm-2.4/include;-I/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0;-I/usr/local/Cellar/glib/2.78.0/include/gio-unix-2.0;-I/usr/local/Cellar/cairo/1.18.0/include;-I/usr/local/Cellar/libepoxy/1.5.10/include;-I/usr/local/Cellar/atk/2.38.0/include/atk-1.0;-I/usr/local/Cellar/cairo/1.18.0/include/cairo;-I/usr/local/Cellar/pangomm@2.46/2.46.3/include/pangomm-1.4;-I/usr/local/Cellar/pangomm@2.46/2.46.3/lib/pangomm-1.4/include;-I/usr/local/Cellar/glibmm@2.66/2.66.6/include/glibmm-2.4;-I/usr/local/Cellar/glibmm@2.66/2.66.6/lib/glibmm-2.4/include;-I/usr/local/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0;-I/usr/local/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include;-I/usr/local/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0;-I/usr/local/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include;-I/usr/local/Cellar/pango/1.50.14/include/pango-1.0;-I/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;-I/usr/local/Cellar/pango/1.50.14/include/pango-1.0;-I/usr/local/Cellar/fribidi/1.0.13/include/fribidi;-I/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;-I/usr/local/Cellar/graphite2/1.3.14/include;-I/usr/local/Cellar/cairo/1.18.0/include/cairo;-I/usr/local/Cellar/fontconfig/2.14.2/include;-I/usr/local/opt/freetype/include/freetype2;-I/usr/local/Cellar/libxext/1.3.5/include;-I/usr/local/Cellar/libxrender/0.9.11/include;-I/usr/local/Cellar/libx11/1.8.7/include;-I/usr/local/Cellar/libxcb/1.16/include;-I/usr/local/Cellar/libxau/1.0.11/include;-I/usr/local/Cellar/libxdmcp/1.1.4/include;-I/usr/local/Cellar/pixman/0.42.2/include/pixman-1;-I/usr/local/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0;-I/usr/local/opt/libpng/include/libpng16;-I/usr/local/Cellar/libtiff/4.6.0/include;-I/usr/local/opt/zstd/include;-I/usr/local/Cellar/xz/5.4.4/include;-I/usr/local/Cellar/jpeg-turbo/3.0.0/include;-I/usr/local/Cellar/glib/2.78.0/include;-I/usr/local/Cellar/glib/2.78.0/include/glib-2.0;-I/usr/local/Cellar/glib/2.78.0/lib/glib-2.0/include;-I/usr/local/opt/gettext/include;-I/usr/local/Cellar/pcre2/10.42/include;-I/usr/local/Cellar/xorgproto/2023.2/include;-I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"
+		},
+		{
+			"name" : "GTKMM_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "GTKMM_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/include"
+		},
+		{
+			"name" : "GTKMM_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/include/gtkmm-3.0;/usr/local/Cellar/gtkmm3/3.24.8/lib/gtkmm-3.0/include;/usr/local/Cellar/atkmm@2.28/2.28.3/include/atkmm-1.6;/usr/local/Cellar/atkmm@2.28/2.28.3/lib/atkmm-1.6/include;/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0/unix-print;/usr/local/Cellar/gtkmm3/3.24.8/include/gdkmm-3.0;/usr/local/Cellar/gtkmm3/3.24.8/lib/gdkmm-3.0/include;/usr/local/Cellar/glibmm@2.66/2.66.6/include/giomm-2.4;/usr/local/Cellar/glibmm@2.66/2.66.6/lib/giomm-2.4/include;/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0;/usr/local/Cellar/glib/2.78.0/include/gio-unix-2.0;/usr/local/Cellar/cairo/1.18.0/include;/usr/local/Cellar/libepoxy/1.5.10/include;/usr/local/Cellar/atk/2.38.0/include/atk-1.0;/usr/local/Cellar/cairo/1.18.0/include/cairo;/usr/local/Cellar/pangomm@2.46/2.46.3/include/pangomm-1.4;/usr/local/Cellar/pangomm@2.46/2.46.3/lib/pangomm-1.4/include;/usr/local/Cellar/glibmm@2.66/2.66.6/include/glibmm-2.4;/usr/local/Cellar/glibmm@2.66/2.66.6/lib/glibmm-2.4/include;/usr/local/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0;/usr/local/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include;/usr/local/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0;/usr/local/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include;/usr/local/Cellar/pango/1.50.14/include/pango-1.0;/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;/usr/local/Cellar/pango/1.50.14/include/pango-1.0;/usr/local/Cellar/fribidi/1.0.13/include/fribidi;/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;/usr/local/Cellar/graphite2/1.3.14/include;/usr/local/Cellar/cairo/1.18.0/include/cairo;/usr/local/Cellar/fontconfig/2.14.2/include;/usr/local/opt/freetype/include/freetype2;/usr/local/Cellar/libxext/1.3.5/include;/usr/local/Cellar/libxrender/0.9.11/include;/usr/local/Cellar/libx11/1.8.7/include;/usr/local/Cellar/libxcb/1.16/include;/usr/local/Cellar/libxau/1.0.11/include;/usr/local/Cellar/libxdmcp/1.1.4/include;/usr/local/Cellar/pixman/0.42.2/include/pixman-1;/usr/local/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0;/usr/local/opt/libpng/include/libpng16;/usr/local/Cellar/libtiff/4.6.0/include;/usr/local/opt/zstd/include;/usr/local/Cellar/xz/5.4.4/include;/usr/local/Cellar/jpeg-turbo/3.0.0/include;/usr/local/Cellar/glib/2.78.0/include;/usr/local/Cellar/glib/2.78.0/include/glib-2.0;/usr/local/Cellar/glib/2.78.0/lib/glib-2.0/include;/usr/local/opt/gettext/include;/usr/local/Cellar/pcre2/10.42/include;/usr/local/Cellar/xorgproto/2023.2/include;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"
+		},
+		{
+			"name" : "GTKMM_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/gtkmm3/3.24.8/lib;-L/usr/local/Cellar/atkmm@2.28/2.28.3/lib;-L/usr/local/Cellar/gtkmm3/3.24.8/lib;-L/usr/local/Cellar/glibmm@2.66/2.66.6/lib;-L/usr/local/Cellar/gtk+3/3.24.38/lib;-L/usr/local/Cellar/atk/2.38.0/lib;-L/usr/local/Cellar/cairo/1.18.0/lib;-L/usr/local/Cellar/glib/2.78.0/lib;-L/usr/local/Cellar/pangomm@2.46/2.46.3/lib;-L/usr/local/Cellar/glibmm@2.66/2.66.6/lib;-L/usr/local/Cellar/cairomm@1.14/1.14.5/lib;-L/usr/local/Cellar/libsigc++@2/2.10.8/lib;-L/usr/local/Cellar/pango/1.50.14/lib;-L/usr/local/Cellar/harfbuzz/8.2.1/lib;-L/usr/local/Cellar/cairo/1.18.0/lib;-L/usr/local/Cellar/gdk-pixbuf/2.42.10_1/lib;-L/usr/local/Cellar/glib/2.78.0/lib;-L/usr/local/opt/gettext/lib;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-lgdk-3;-Wl,-framework,Cocoa;-Wl,-framework,Carbon;-Wl,-framework,CoreGraphics;-latk-1.0;-lcairo-gobject;-lgio-2.0;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lpango-1.0;-lharfbuzz;-lcairo;-lgdk_pixbuf-2.0;-lgobject-2.0;-lglib-2.0;-lintl"
+		},
+		{
+			"name" : "GTKMM_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-Wl,-framework,Cocoa;-Wl,-framework,Carbon;-Wl,-framework,CoreGraphics"
+		},
+		{
+			"name" : "GTKMM_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/lib"
+		},
+		{
+			"name" : "GTKMM_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;gdk-3;atk-1.0;cairo-gobject;gio-2.0;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;pango-1.0;harfbuzz;cairo;gdk_pixbuf-2.0;gobject-2.0;glib-2.0;intl"
+		},
+		{
+			"name" : "GTKMM_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/lib;/usr/local/Cellar/atkmm@2.28/2.28.3/lib;/usr/local/Cellar/gtkmm3/3.24.8/lib;/usr/local/Cellar/glibmm@2.66/2.66.6/lib;/usr/local/Cellar/gtk+3/3.24.38/lib;/usr/local/Cellar/atk/2.38.0/lib;/usr/local/Cellar/cairo/1.18.0/lib;/usr/local/Cellar/glib/2.78.0/lib;/usr/local/Cellar/pangomm@2.46/2.46.3/lib;/usr/local/Cellar/glibmm@2.66/2.66.6/lib;/usr/local/Cellar/cairomm@1.14/1.14.5/lib;/usr/local/Cellar/libsigc++@2/2.10.8/lib;/usr/local/Cellar/pango/1.50.14/lib;/usr/local/Cellar/harfbuzz/8.2.1/lib;/usr/local/Cellar/cairo/1.18.0/lib;/usr/local/Cellar/gdk-pixbuf/2.42.10_1/lib;/usr/local/Cellar/glib/2.78.0/lib;/usr/local/opt/gettext/lib"
+		},
+		{
+			"name" : "GTKMM_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "gtkmm-3.0"
+		},
+		{
+			"name" : "GTKMM_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8"
+		},
+		{
+			"name" : "GTKMM_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/gtkmm3/3.24.8/include/gtkmm-3.0;-I/usr/local/Cellar/gtkmm3/3.24.8/lib/gtkmm-3.0/include;-I/usr/local/Cellar/atkmm@2.28/2.28.3/include/atkmm-1.6;-I/usr/local/Cellar/atkmm@2.28/2.28.3/lib/atkmm-1.6/include;-I/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0/unix-print;-I/usr/local/Cellar/gtkmm3/3.24.8/include/gdkmm-3.0;-I/usr/local/Cellar/gtkmm3/3.24.8/lib/gdkmm-3.0/include;-I/usr/local/Cellar/glibmm@2.66/2.66.6/include/giomm-2.4;-I/usr/local/Cellar/glibmm@2.66/2.66.6/lib/giomm-2.4/include;-I/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0;-I/usr/local/Cellar/glib/2.78.0/include/gio-unix-2.0;-I/usr/local/Cellar/cairo/1.18.0/include;-I/usr/local/Cellar/libepoxy/1.5.10/include;-I/usr/local/Cellar/atk/2.38.0/include/atk-1.0;-I/usr/local/Cellar/cairo/1.18.0/include/cairo;-I/usr/local/Cellar/pangomm@2.46/2.46.3/include/pangomm-1.4;-I/usr/local/Cellar/pangomm@2.46/2.46.3/lib/pangomm-1.4/include;-I/usr/local/Cellar/glibmm@2.66/2.66.6/include/glibmm-2.4;-I/usr/local/Cellar/glibmm@2.66/2.66.6/lib/glibmm-2.4/include;-I/usr/local/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0;-I/usr/local/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include;-I/usr/local/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0;-I/usr/local/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include;-I/usr/local/Cellar/pango/1.50.14/include/pango-1.0;-I/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;-I/usr/local/Cellar/pango/1.50.14/include/pango-1.0;-I/usr/local/Cellar/fribidi/1.0.13/include/fribidi;-I/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;-I/usr/local/Cellar/graphite2/1.3.14/include;-I/usr/local/Cellar/cairo/1.18.0/include/cairo;-I/usr/local/Cellar/fontconfig/2.14.2/include;-I/usr/local/opt/freetype/include/freetype2;-I/usr/local/Cellar/libxext/1.3.5/include;-I/usr/local/Cellar/libxrender/0.9.11/include;-I/usr/local/Cellar/libx11/1.8.7/include;-I/usr/local/Cellar/libxcb/1.16/include;-I/usr/local/Cellar/libxau/1.0.11/include;-I/usr/local/Cellar/libxdmcp/1.1.4/include;-I/usr/local/Cellar/pixman/0.42.2/include/pixman-1;-I/usr/local/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0;-I/usr/local/opt/libpng/include/libpng16;-I/usr/local/Cellar/libtiff/4.6.0/include;-I/usr/local/opt/zstd/include;-I/usr/local/Cellar/xz/5.4.4/include;-I/usr/local/Cellar/jpeg-turbo/3.0.0/include;-I/usr/local/Cellar/glib/2.78.0/include;-I/usr/local/Cellar/glib/2.78.0/include/glib-2.0;-I/usr/local/Cellar/glib/2.78.0/lib/glib-2.0/include;-I/usr/local/opt/gettext/include;-I/usr/local/Cellar/pcre2/10.42/include;-I/usr/local/Cellar/xorgproto/2023.2/include;-I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"
+		},
+		{
+			"name" : "GTKMM_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/include/gtkmm-3.0;/usr/local/Cellar/gtkmm3/3.24.8/lib/gtkmm-3.0/include;/usr/local/Cellar/atkmm@2.28/2.28.3/include/atkmm-1.6;/usr/local/Cellar/atkmm@2.28/2.28.3/lib/atkmm-1.6/include;/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0/unix-print;/usr/local/Cellar/gtkmm3/3.24.8/include/gdkmm-3.0;/usr/local/Cellar/gtkmm3/3.24.8/lib/gdkmm-3.0/include;/usr/local/Cellar/glibmm@2.66/2.66.6/include/giomm-2.4;/usr/local/Cellar/glibmm@2.66/2.66.6/lib/giomm-2.4/include;/usr/local/Cellar/gtk+3/3.24.38/include/gtk-3.0;/usr/local/Cellar/glib/2.78.0/include/gio-unix-2.0;/usr/local/Cellar/cairo/1.18.0/include;/usr/local/Cellar/libepoxy/1.5.10/include;/usr/local/Cellar/atk/2.38.0/include/atk-1.0;/usr/local/Cellar/cairo/1.18.0/include/cairo;/usr/local/Cellar/pangomm@2.46/2.46.3/include/pangomm-1.4;/usr/local/Cellar/pangomm@2.46/2.46.3/lib/pangomm-1.4/include;/usr/local/Cellar/glibmm@2.66/2.66.6/include/glibmm-2.4;/usr/local/Cellar/glibmm@2.66/2.66.6/lib/glibmm-2.4/include;/usr/local/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0;/usr/local/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include;/usr/local/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0;/usr/local/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include;/usr/local/Cellar/pango/1.50.14/include/pango-1.0;/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;/usr/local/Cellar/pango/1.50.14/include/pango-1.0;/usr/local/Cellar/fribidi/1.0.13/include/fribidi;/usr/local/Cellar/harfbuzz/8.2.1/include/harfbuzz;/usr/local/Cellar/graphite2/1.3.14/include;/usr/local/Cellar/cairo/1.18.0/include/cairo;/usr/local/Cellar/fontconfig/2.14.2/include;/usr/local/opt/freetype/include/freetype2;/usr/local/Cellar/libxext/1.3.5/include;/usr/local/Cellar/libxrender/0.9.11/include;/usr/local/Cellar/libx11/1.8.7/include;/usr/local/Cellar/libxcb/1.16/include;/usr/local/Cellar/libxau/1.0.11/include;/usr/local/Cellar/libxdmcp/1.1.4/include;/usr/local/Cellar/pixman/0.42.2/include/pixman-1;/usr/local/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0;/usr/local/opt/libpng/include/libpng16;/usr/local/Cellar/libtiff/4.6.0/include;/usr/local/opt/zstd/include;/usr/local/Cellar/xz/5.4.4/include;/usr/local/Cellar/jpeg-turbo/3.0.0/include;/usr/local/Cellar/glib/2.78.0/include;/usr/local/Cellar/glib/2.78.0/include/glib-2.0;/usr/local/Cellar/glib/2.78.0/lib/glib-2.0/include;/usr/local/opt/gettext/include;/usr/local/Cellar/pcre2/10.42/include;/usr/local/Cellar/xorgproto/2023.2/include;/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"
+		},
+		{
+			"name" : "GTKMM_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/gtkmm3/3.24.8/lib;-L/usr/local/Cellar/atkmm@2.28/2.28.3/lib;-L/usr/local/Cellar/gtkmm3/3.24.8/lib;-L/usr/local/Cellar/glibmm@2.66/2.66.6/lib;-L/usr/local/Cellar/gtk+3/3.24.38/lib;-L/usr/local/Cellar/libepoxy/1.5.10/lib;-L/usr/local/Cellar/atk/2.38.0/lib;-L/usr/local/Cellar/cairo/1.18.0/lib;-L/usr/local/Cellar/pangomm@2.46/2.46.3/lib;-L/usr/local/Cellar/glibmm@2.66/2.66.6/lib;-L/usr/local/Cellar/cairomm@1.14/1.14.5/lib;-L/usr/local/Cellar/libsigc++@2/2.10.8/lib;-L/usr/local/Cellar/pango/1.50.14/lib;-L/usr/local/Cellar/harfbuzz/8.2.1/lib;-L/usr/local/Cellar/pango/1.50.14/lib;-L/usr/local/Cellar/fribidi/1.0.13/lib;-L/usr/local/Cellar/harfbuzz/8.2.1/lib;-L/usr/local/Cellar/graphite2/1.3.14/lib;-L/usr/local/Cellar/cairo/1.18.0/lib;-L/usr/local/Cellar/fontconfig/2.14.2/lib;-L/usr/local/opt/freetype/lib;-L/usr/local/Cellar/libxext/1.3.5/lib;-L/usr/local/Cellar/libxrender/0.9.11/lib;-L/usr/local/Cellar/libx11/1.8.7/lib;-L/usr/local/Cellar/libxcb/1.16/lib;-L/usr/local/Cellar/libxau/1.0.11/lib;-L/usr/local/Cellar/libxdmcp/1.1.4/lib;-L/usr/local/Cellar/pixman/0.42.2/lib;-L/usr/local/Cellar/gdk-pixbuf/2.42.10_1/lib;-L/usr/local/opt/libpng/lib;-L/usr/local/Cellar/libtiff/4.6.0/lib;-L/usr/local/opt/zstd/lib;-L/usr/local/Cellar/xz/5.4.4/lib;-L/usr/local/Cellar/jpeg-turbo/3.0.0/lib;-L/usr/local/Cellar/glib/2.78.0/lib;-L/usr/local/opt/gettext/lib;-L/usr/local/Cellar/pcre2/10.42/lib;-L/usr/lib;-lgtkmm-3.0;-latkmm-1.6;-lgdkmm-3.0;-lgiomm-2.4;-lgtk-3;-lgdk-3;-Wl,-framework,Cocoa;-Wl,-framework,Carbon;-Wl,-framework,CoreGraphics;-framework;CoreFoundation;-framework;ApplicationServices;-lepoxy;-ldl;-latk-1.0;-lcairo-gobject;-lm;-ldl;-framework;CoreFoundation;-framework;ApplicationServices;-lpangomm-1.4;-lglibmm-2.4;-lcairomm-1.0;-lsigc-2.0;-lpangocairo-1.0;-lm;-framework;CoreFoundation;-framework;ApplicationServices;-lpangoft2-1.0;-lm;-framework;CoreFoundation;-framework;ApplicationServices;-lharfbuzz-gobject;-lpango-1.0;-lm;-framework;CoreFoundation;-framework;ApplicationServices;-lfribidi;-lharfbuzz;-lm;-framework;ApplicationServices;-lgraphite2;-lcairo;-lm;-ldl;-framework;CoreFoundation;-framework;ApplicationServices;-lfontconfig;-lexpat;-lfreetype;-lbz2;-lXext;-lXrender;-lX11;-lxcb-render;-lxcb-shm;-lxcb;-lXau;-lXdmcp;-lpixman-1;-lgdk_pixbuf-2.0;-lm;-lintl;-lpng16;-lz;-ltiff;-lzstd;-llzma;-ljpeg;-lz;-lzstd;-llzma;-pthread;-lpthread;-ljpeg;-lgio-2.0;-lintl;-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-lresolv;-lgmodule-2.0;-lintl;-lz;-lgobject-2.0;-lintl;-lffi;-lglib-2.0;-lintl;-liconv;-lm;-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-framework;Carbon;-lpcre2-8;-D_THREAD_SAFE;-pthread"
+		},
+		{
+			"name" : "GTKMM_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-Wl,-framework,Cocoa;-Wl,-framework,Carbon;-Wl,-framework,CoreGraphics;-framework;CoreFoundation;-framework;ApplicationServices;-framework;CoreFoundation;-framework;ApplicationServices;-framework;CoreFoundation;-framework;ApplicationServices;-framework;CoreFoundation;-framework;ApplicationServices;-framework;CoreFoundation;-framework;ApplicationServices;-framework;CoreFoundation;-framework;ApplicationServices;-pthread;-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-framework;Foundation;-framework;CoreFoundation;-framework;AppKit;-framework;Carbon;-D_THREAD_SAFE;-pthread"
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "gtkmm-3.0;atkmm-1.6;gdkmm-3.0;giomm-2.4;gtk-3;gdk-3;epoxy;dl;atk-1.0;cairo-gobject;m;dl;pangomm-1.4;glibmm-2.4;cairomm-1.0;sigc-2.0;pangocairo-1.0;m;pangoft2-1.0;m;harfbuzz-gobject;pango-1.0;m;fribidi;harfbuzz;m;graphite2;cairo;m;dl;fontconfig;expat;freetype;bz2;Xext;Xrender;X11;xcb-render;xcb-shm;xcb;Xau;Xdmcp;pixman-1;gdk_pixbuf-2.0;m;intl;png16;z;tiff;zstd;lzma;jpeg;z;zstd;lzma;pthread;jpeg;gio-2.0;intl;resolv;gmodule-2.0;intl;z;gobject-2.0;intl;ffi;glib-2.0;intl;iconv;m;pcre2-8"
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/lib;/usr/local/Cellar/atkmm@2.28/2.28.3/lib;/usr/local/Cellar/gtkmm3/3.24.8/lib;/usr/local/Cellar/glibmm@2.66/2.66.6/lib;/usr/local/Cellar/gtk+3/3.24.38/lib;/usr/local/Cellar/libepoxy/1.5.10/lib;/usr/local/Cellar/atk/2.38.0/lib;/usr/local/Cellar/cairo/1.18.0/lib;/usr/local/Cellar/pangomm@2.46/2.46.3/lib;/usr/local/Cellar/glibmm@2.66/2.66.6/lib;/usr/local/Cellar/cairomm@1.14/1.14.5/lib;/usr/local/Cellar/libsigc++@2/2.10.8/lib;/usr/local/Cellar/pango/1.50.14/lib;/usr/local/Cellar/harfbuzz/8.2.1/lib;/usr/local/Cellar/pango/1.50.14/lib;/usr/local/Cellar/fribidi/1.0.13/lib;/usr/local/Cellar/harfbuzz/8.2.1/lib;/usr/local/Cellar/graphite2/1.3.14/lib;/usr/local/Cellar/cairo/1.18.0/lib;/usr/local/Cellar/fontconfig/2.14.2/lib;/usr/local/opt/freetype/lib;/usr/local/Cellar/libxext/1.3.5/lib;/usr/local/Cellar/libxrender/0.9.11/lib;/usr/local/Cellar/libx11/1.8.7/lib;/usr/local/Cellar/libxcb/1.16/lib;/usr/local/Cellar/libxau/1.0.11/lib;/usr/local/Cellar/libxdmcp/1.1.4/lib;/usr/local/Cellar/pixman/0.42.2/lib;/usr/local/Cellar/gdk-pixbuf/2.42.10_1/lib;/usr/local/opt/libpng/lib;/usr/local/Cellar/libtiff/4.6.0/lib;/usr/local/opt/zstd/lib;/usr/local/Cellar/xz/5.4.4/lib;/usr/local/Cellar/jpeg-turbo/3.0.0/lib;/usr/local/Cellar/glib/2.78.0/lib;/usr/local/opt/gettext/lib;/usr/local/Cellar/pcre2/10.42/lib;/usr/lib"
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "3.24.8"
+		},
+		{
+			"name" : "GTKMM_gtkmm-3.0_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_gtkmm-3.0_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_gtkmm-3.0_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "GTKMM_gtkmm-3.0_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/jsoncpp/1.9.5/include"
+		},
+		{
+			"name" : "JSONCPP_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "JSONCPP_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/include"
+		},
+		{
+			"name" : "JSONCPP_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/include"
+		},
+		{
+			"name" : "JSONCPP_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/jsoncpp/1.9.5/lib;-ljsoncpp"
+		},
+		{
+			"name" : "JSONCPP_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/lib"
+		},
+		{
+			"name" : "JSONCPP_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "jsoncpp"
+		},
+		{
+			"name" : "JSONCPP_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/lib"
+		},
+		{
+			"name" : "JSONCPP_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "jsoncpp"
+		},
+		{
+			"name" : "JSONCPP_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5"
+		},
+		{
+			"name" : "JSONCPP_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/jsoncpp/1.9.5/include"
+		},
+		{
+			"name" : "JSONCPP_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/include"
+		},
+		{
+			"name" : "JSONCPP_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/jsoncpp/1.9.5/lib;-ljsoncpp"
+		},
+		{
+			"name" : "JSONCPP_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "jsoncpp"
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/lib"
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1.9.4"
+		},
+		{
+			"name" : "JSONCPP_jsoncpp_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_jsoncpp_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_jsoncpp_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "JSONCPP_jsoncpp_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "OPENSSL_CRYPTO_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib/libcrypto.dylib"
+		},
+		{
+			"name" : "OPENSSL_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "OPENSSL_SSL_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib/libssl.dylib"
+		},
+		{
+			"name" : "PKG_CONFIG_ARGN",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Arguments to supply to pkg-config"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_CONFIG_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "pkg-config executable"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/bin/pkg-config"
+		},
+		{
+			"name" : "PassGuard_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/Axel/PassGuard/build"
+		},
+		{
+			"name" : "PassGuard_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "PassGuard_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/Axel/PassGuard"
+		},
+		{
+			"name" : "_OPENSSL_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "_OPENSSL_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "_OPENSSL_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "_OPENSSL_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "_OPENSSL_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/openssl@3/3.1.3/lib;-lssl;-lcrypto"
+		},
+		{
+			"name" : "_OPENSSL_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib"
+		},
+		{
+			"name" : "_OPENSSL_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ssl;crypto"
+		},
+		{
+			"name" : "_OPENSSL_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib"
+		},
+		{
+			"name" : "_OPENSSL_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "openssl"
+		},
+		{
+			"name" : "_OPENSSL_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/include"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/local/Cellar/openssl@3/3.1.3/lib;-lssl;-lcrypto"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ssl;crypto"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib"
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "3.1.3"
+		},
+		{
+			"name" : "_OPENSSL_openssl_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_openssl_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_openssl_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "_OPENSSL_openssl_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "__pkg_config_arguments_GTKMM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "REQUIRED;gtkmm-3.0"
+		},
+		{
+			"name" : "__pkg_config_arguments_JSONCPP",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "REQUIRED;jsoncpp"
+		},
+		{
+			"name" : "__pkg_config_arguments__OPENSSL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "QUIET;openssl"
+		},
+		{
+			"name" : "__pkg_config_checked_GTKMM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "__pkg_config_checked_JSONCPP",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "__pkg_config_checked__OPENSSL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "nlohmann_json_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for nlohmann_json."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/share/cmake/nlohmann_json"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_atk-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/atk/2.38.0/lib/libatk-1.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_atkmm-1.6",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/atkmm@2.28/2.28.3/lib/libatkmm-1.6.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_cairo",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/cairo/1.18.0/lib/libcairo.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_cairo-gobject",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/cairo/1.18.0/lib/libcairo-gobject.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_cairomm-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/cairomm@1.14/1.14.5/lib/libcairomm-1.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gdk-3",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/gtk+3/3.24.38/lib/libgdk-3.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gdk_pixbuf-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/gdk-pixbuf/2.42.10_1/lib/libgdk_pixbuf-2.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gdkmm-3.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/lib/libgdkmm-3.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gio-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/glib/2.78.0/lib/libgio-2.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_giomm-2.4",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/glibmm@2.66/2.66.6/lib/libgiomm-2.4.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_glib-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/glib/2.78.0/lib/libglib-2.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_glibmm-2.4",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/glibmm@2.66/2.66.6/lib/libglibmm-2.4.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gobject-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/glib/2.78.0/lib/libgobject-2.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gtk-3",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/gtk+3/3.24.38/lib/libgtk-3.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_gtkmm-3.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/gtkmm3/3.24.8/lib/libgtkmm-3.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_harfbuzz",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/harfbuzz/8.2.1/lib/libharfbuzz.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_intl",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/opt/gettext/lib/libintl.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_pango-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/pango/1.50.14/lib/libpango-1.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_pangocairo-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/pango/1.50.14/lib/libpangocairo-1.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_pangomm-1.4",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/pangomm@2.46/2.46.3/lib/libpangomm-1.4.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_GTKMM_sigc-2.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/libsigc++@2/2.10.8/lib/libsigc-2.0.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib_JSONCPP_jsoncpp",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/jsoncpp/1.9.5/lib/libjsoncpp.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib__OPENSSL_crypto",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib/libcrypto.dylib"
+		},
+		{
+			"name" : "pkgcfg_lib__OPENSSL_ssl",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib/libssl.dylib"
+		},
+		{
+			"name" : "prefix_result",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local/Cellar/openssl@3/3.1.3/lib"
+		}
+	],
+	"kind" : "cache",
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

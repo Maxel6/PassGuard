@@ -1,0 +1,73 @@
+#include "main.h"
+using namespace std;
+int AddPassword(){
+    string url;
+    string username;
+    string password;
+
+    cout << "Enter URL: ";
+    cin >> url;
+    cout << "Enter username: ";
+    cin >> username;
+    cout << "Enter password: ";
+    cin >> password;
+    
+    new Password(url, username, password);
+    cout << "Password added!\n";
+    cout << "Would you like to add another password? (y/n): ";
+    char answer;
+    cin >> answer;
+    if (answer == 'y' || answer == 'Y') {
+        AddPassword();
+    } else {
+        return 0;
+    }
+    return 1;
+}
+int main() {
+    int choice;
+
+    while (true) {
+        cout << "Menu:"
+             << "\n1. Add a password"
+             << "\n2. View passwords"
+             << "\n3. Delete a password"
+             << "\n4. Modify a password"
+             << "\n5. Help"
+             << "\n0. Quit"
+             << "\nChoose an option: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                cout << "Option 1: Add a password\n";
+                AddPassword();
+                break;
+            case 2:
+                cout << "Option 2: View passwords\n";
+                // Insert code to view passwords here
+                break;
+            case 3:
+                cout << "Option 3: Delete a password\n";
+                // Insert code to delete a password here
+                break;
+            case 4:
+                cout << "Option 4: Modify a password\n";
+                // Insert code to modify a password here
+                break;
+            case 5:
+                cout << "Option 5: Help\n";
+                // Insert code to display help here
+                break;
+            case 0:
+                cout << "Goodbye!\n";
+                return 0;
+            default:
+                cout << "Invalid option. Please choose a valid option.\n";
+                break;
+        }
+    }
+
+    return 0;
+}
+
