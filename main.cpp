@@ -2,71 +2,9 @@
 #include <vector>
 #include <fstream>
 #include "nlohmann/json.hpp"
+#include "main.h"
 
-using namespace std;
-using json = nlohmann::json;
-
-class Password
-{
-public:
-    Password(const string &url, const string &username, const string &password)
-        : url_(url), username_(username), password_(password) {}
-
-    const string &getUrl() const { return url_; }
-    const string &getUsername() const { return username_; }
-    const string &getPassword() const { return password_; }
-
-private:
-    string url_;
-    string username_;
-    string password_;
-};
-
-vector<Password> passwordList;
-
-void SavePasswordsToJson()
-{
-    json data;
-
-    for (const Password &password : passwordList)
-    {
-        json entry;
-        entry["url"] = password.getUrl();
-        entry["username"] = password.getUsername();
-        entry["password"] = password.getPassword();
-        data.push_back(entry);
-    }
-
-    ofstream outputFile("passwords.json");
-    outputFile << data.dump(4); // Le paramètre 4 permet une mise en forme lisible.
-    outputFile.close();
-}
-
-void LoadPasswordsFromJson()
-{
-    ifstream inputFile("passwords.json");
-    if (!inputFile.is_open())
-    {
-        cout << "No saved passwords found." << endl;
-        return;
-    }
-
-    json data;
-    inputFile >> data;
-
-    for (const json &entry : data)
-    {
-        string url = entry["url"];
-        string username = entry["username"];
-        string password = entry["password"];
-        Password newPassword(url, username, password);
-        passwordList.push_back(newPassword);
-    }
-
-    cout << "Passwords loaded from passwords.json." << endl;
-}
-
-int AddPassword()
+int PasswordManager::AddPassword()
 {
     string url;
     string username;
@@ -89,17 +27,97 @@ int AddPassword()
 
     if (answer == 'y' || answer == 'Y')
     {
-        AddPassword();
+        manager.AddPassword();
     }
     else
     {
-        SavePasswordsToJson(); // Sauvegarde les mots de passe dans un fichier JSON
+        manager.SavePasswordsToJson();
         return 0;
     }
     return 1;
 }
 
-int menu()
+void PasswordManager::ViewPasswords()
+{
+    if (passwordList.empty())
+    {
+        cout << "No passwords stored." << endl;
+    }
+    else
+    {
+        cout << '\n'
+             << "Stored passwords:" << '\n'
+             << endl;
+        for (size_t i = 0; i < passwordList.size(); ++i)
+        {
+            cout << "Site: " << passwordList[i].getUrl() << endl;
+            cout << "Username: " << passwordList[i].getUsername() << endl;
+            cout << "Password: " << passwordList[i].getPassword() << endl;
+            cout << "-------------------" << endl;
+        }
+    }
+}
+
+void PasswordManager::DeletePassword()
+{
+    string url;
+    cout << "Enter the URL of the site to delete the password: ";
+    cin >> url;
+
+    for (size_t i = 0; i < passwordList.size(); ++i)
+    {
+        if (passwordList[i].getUrl() == url)
+        {
+            cout << "Deleted password for site: " << url << endl;
+            passwordList.erase(passwordList.begin() + i);
+            PasswordManager::SavePasswordsToJson(); // Mettre à jour le fichier JSON après la suppression
+            return;                                 // Sortir de la boucle dès que le mot de passe est trouvé et supprimé
+        }
+    }
+    cout << "No password found for site: " << url << endl;
+}
+
+void PasswordManager::ChangePassword()
+{
+    string url;
+    cout << "Enter the URL of the site to change the password: ";
+    cin >> url;
+
+    for (size_t i = 0; i < passwordList.size(); ++i)
+    {
+        if (passwordList[i].getUrl() == url)
+        {
+            string oldPassword;
+            string newPassword;
+            int attempts = 0;
+
+            for (; attempts < 3; ++attempts)
+            {
+                cout << "Enter the old password: ";
+                cin >> oldPassword;
+
+                if (passwordList[i].getPassword() == oldPassword)
+                {
+                    cout << "Enter the new password: ";
+                    cin >> newPassword;
+
+                    passwordList[i].setPassword(newPassword);
+
+                    cout << "Password changed for site: " << url << endl;
+                    PasswordManager::SavePasswordsToJson();
+                    return;
+                }
+                else{
+                    cout << "Incorrect password!" << endl;
+                }
+            }
+            return;
+        }
+    }
+    cout << "No password found for site: " << url << endl;
+}
+
+int PasswordManager::menu()
 {
 
     int choice;
@@ -119,21 +137,21 @@ int menu()
             {
             case 1:
                 cout << "Option 1: Add a password\n";
-                AddPassword();
+                manager.AddPassword();
                 break;
             case 2:
                 cout << "Option 2: View passwords\n";
-                // Insert code to view passwords here
+                manager.ViewPasswords();
                 break;
 
             case 3:
                 cout << "Option 3: Delete a password\n";
-                // Insert code to delete a password here$
+                manager.DeletePassword();
                 break;
 
             case 4:
                 cout << "Option 4: Modify a password\n";
-                // Insert code to modify a password here
+                manager.ChangePassword();
                 break;
 
             case 5:
@@ -144,24 +162,30 @@ int menu()
             case 0:
                 cout << "Goodbye!\n";
 
-                return 1;
+                return 0;
 
             default:
                 cout << "Invalid option. Please choose a valid option.\n";
                 break;
             }
         }
-        else{
+        else
+        {
             cout << "Invalid option. Please choose a valid option.\n";
         }
-        return 0;
+        return 1;
     }
 }
 
+PasswordManager manager;
+
 int main()
 {
-    LoadPasswordsFromJson();
-    menu();
+
+    manager.LoadPasswordsFromJson();
+    while(manager.menu())
+    {}
+    manager.SavePasswordsToJson();
 
     return 0;
 }
