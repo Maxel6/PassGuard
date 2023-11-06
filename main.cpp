@@ -4,7 +4,10 @@
 #include "nlohmann/json.hpp"
 #include "main.h"
 
+unsigned char key[32];
+unsigned char iv[16];
 
+PasswordManager manager;
 
 int PasswordManager::menu()
 {
@@ -69,11 +72,17 @@ int PasswordManager::menu()
     }
 }
 
-PasswordManager manager;
+
+
 
 int main()
 {
+    OpenSSL_add_all_algorithms();
+    ERR_load_crypto_strings();
 
+    RAND_bytes(key, sizeof(key));
+    RAND_bytes(iv, sizeof(iv));
+    
     manager.LoadPasswordsFromJson();
     while(manager.menu())
     {}

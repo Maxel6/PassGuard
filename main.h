@@ -3,8 +3,11 @@
 
 #include <gtk/gtk.h>
 #include <nlohmann/json.hpp>
-#include <openssl/evp.h>
 #include <openssl/rand.h>
+#include <openssl/evp.h>
+#include <openssl/bio.h>
+#include <openssl/buffer.h>
+#include <openssl/err.h>
 #include <fstream>
 #include <string>
 #include <iostream>
@@ -39,6 +42,8 @@ private:
 
 class PasswordManager {
 public:
+    string EncryptPassword(const string &password);
+    string DecryptPassword(const string &encryptedPassword);
     void SavePasswordsToJson();
     void LoadPasswordsFromJson();
     int AddPassword();
@@ -52,5 +57,7 @@ private:
 
 extern vector<Password> passwordList;
 extern PasswordManager manager;
+extern unsigned char key[32];
+extern unsigned char iv[16];
 
 #endif // MAIN_H
