@@ -43,21 +43,25 @@ private:
 class PasswordManager {
 public:
     string EncryptPassword(const string &password);
+    int encrypt(unsigned char *plaintext, int plaintext_len, unsigned char *key, unsigned char *iv, unsigned char *ciphertext);
+    int decrypt(unsigned char *ciphertext, int ciphertext_len, unsigned char *key, unsigned char *iv, unsigned char *plaintext);
     string DecryptPassword(const string &encryptedPassword);
     void SavePasswordsToJson();
     void LoadPasswordsFromJson();
-    int AddPassword();
-    int menu();
+    int AddPassword(unsigned char *ciphertext, unsigned char *key, unsigned char *iv);
+    int menu(unsigned char *ciphertext, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext);
     void DeletePassword();
-    void ViewPasswords();
+    void ViewPasswords(unsigned char *ciphertext, int ciphertext_len, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext);
     void ChangePassword();
 private:
     std::vector<Password> passwordList;
 };
 
+std::vector<unsigned char> base64_decode(const std::string &encoded_string);
+std::string base64_encode(const std::vector<unsigned char> &data);
+bool is_base64(unsigned char c);
+
 extern vector<Password> passwordList;
 extern PasswordManager manager;
-extern unsigned char key[32];
-extern unsigned char iv[16];
 
 #endif // MAIN_H

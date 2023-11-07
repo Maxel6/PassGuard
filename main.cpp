@@ -4,14 +4,14 @@
 #include "nlohmann/json.hpp"
 #include "main.h"
 
-unsigned char key[32];
-unsigned char iv[16];
+
 
 PasswordManager manager;
 
-int PasswordManager::menu()
+int PasswordManager::menu(unsigned char *ciphertext, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext)
 {
 
+    int ciphertext_len;
     int choice;
     while (true)
     {
@@ -32,11 +32,11 @@ int PasswordManager::menu()
             {
             case 1:
                 cout << "Option 1: Add a password\n";
-                manager.AddPassword();
+                ciphertext_len = manager.AddPassword(ciphertext, key, iv);
                 break;
             case 2:
                 cout << "Option 2: View passwords\n";
-                manager.ViewPasswords();
+                manager.ViewPasswords(ciphertext, ciphertext_len, key, iv, decryptedtext);
                 break;
 
             case 3:
@@ -75,18 +75,62 @@ int PasswordManager::menu()
 
 
 
-int main()
-{
+// int main()
+// {
+//     OpenSSL_add_all_algorithms();
+//     ERR_load_crypto_strings();
+//     //initialisation de la clé
+//     unsigned char key[32] ;
+//     RAND_bytes(key, sizeof(key));
+//     //initialisation de l'iv
+//     unsigned char iv[16];
+//     RAND_bytes(iv, sizeof(iv));
+    
+//     unsigned char ciphertext[128];
+//     unsigned char decryptedtext[128];
+    
+//     int decryptedtext_len, ciphertext_len;
+//     unsigned char *plaintext =
+//         (unsigned char *)"C'est mon bois";
+
+//     ciphertext_len = manager.encrypt (plaintext, strlen ((char *)plaintext), key, iv,
+//                               ciphertext);
+     
+//     printf("Ciphertext is:\n");
+//     BIO_dump_fp (stdout, (const char *)ciphertext, ciphertext_len);
+
+//     decryptedtext_len = manager.decrypt(ciphertext, ciphertext_len, key, iv,
+//                                 decryptedtext);
+
+//     decryptedtext[decryptedtext_len] = '\0';
+
+//     /* Show the decrypted text */
+//     printf("Decrypted text is:\n");
+//     printf("%s\n", decryptedtext);
+//     // manager.LoadPasswordsFromJson();
+//     // while(manager.menu())
+//     // {}
+//     // manager.SavePasswordsToJson();
+
+//     return 0;
+// }
+int main (void) {
+
     OpenSSL_add_all_algorithms();
     ERR_load_crypto_strings();
-
+    //initialisation de la clé
+    unsigned char key[32] ;
     RAND_bytes(key, sizeof(key));
+    //initialisation de l'iv
+    unsigned char iv[16];
     RAND_bytes(iv, sizeof(iv));
     
+    unsigned char ciphertext[128];
+    unsigned char decryptedtext[128];
+    
     manager.LoadPasswordsFromJson();
-    while(manager.menu())
+    while(manager.menu(ciphertext, key, iv, decryptedtext))
     {}
     manager.SavePasswordsToJson();
 
-    return 0;
 }

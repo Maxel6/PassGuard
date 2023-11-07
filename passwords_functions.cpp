@@ -1,20 +1,26 @@
 #include "main.h"
 
-int PasswordManager::AddPassword()
+int PasswordManager::AddPassword(unsigned char *ciphertext, unsigned char *key, unsigned char *iv)
 {
     string url;
     string username;
-    string password;
-
+    string password_str;
+    int ciphertext_len = 0;
 
     cout << "Enter URL: ";
     cin >> url;
     cout << "Enter username: ";
     cin >> username;
     cout << "Enter password: ";
-    cin >> password;
-    password = manager.EncryptPassword(password);
-    Password newPassword(url, username, password);
+    cin >> password_str;
+    unsigned char *password = (unsigned char *)password_str.c_str();
+    
+    ciphertext_len = manager.encrypt(password, password_str.length(), key, iv ,ciphertext);
+    printf("Ciphertext is:\n");
+    BIO_dump_fp (stdout, (const char *)ciphertext, ciphertext_len);
+
+    Password newPassword(url, username, string(reinterpret_cast<char*>(ciphertext), ciphertext_len));
+
     passwordList.push_back(newPassword);
 
     cout << "Password added!\n";
@@ -24,19 +30,20 @@ int PasswordManager::AddPassword()
 
     if (answer == 'y' || answer == 'Y')
     {
-        manager.AddPassword();
+        manager.AddPassword(ciphertext, key, iv);
     }
     else
     {
         
         manager.SavePasswordsToJson();
-        return 0;
+        return ciphertext_len;
     }
     return 1;
 }
 
-void PasswordManager::ViewPasswords()
-{
+void PasswordManager::ViewPasswords(unsigned char *ciphertext, int ciphertext_len, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext)
+{   
+    int decryptedtext_len = 0;
     if (passwordList.empty())
     {
         cout << "No passwords stored." << endl;
@@ -50,8 +57,8 @@ void PasswordManager::ViewPasswords()
         {
             cout << "Site: " << passwordList[i].getUrl() << endl;
             cout << "Username: " << passwordList[i].getUsername() << endl;
-            string ClearPassword = manager.DecryptPassword(passwordList[i].getPassword());
-            cout << "Password: " << ClearPassword << endl;
+            decryptedtext_len = manager.decrypt(ciphertext, ciphertext_len, key, iv, decryptedtext);
+            cout << "Password: " << decryptedtext << endl;
             cout << "-------------------" << endl;
         }
     }
@@ -129,86 +136,3 @@ void PasswordManager::ChangePassword()
     cout << "No password found for site: " << url << endl;
 }
 
-string PasswordManager::EncryptPassword(const string &password) {
-    // Génération de la clé et de l'IV (vecteur d'initialisation)
-
-    // Initialisation du contexte de chiffrement
-    EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
-    EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, key, iv);
-
-    // Chiffrement du mot de passe
-    const unsigned char *input = (const unsigned char *)password.c_str();
-    unsigned char encryptedData[256];  // Taille suffisante pour stocker les données chiffrées
-    int encryptedLength = 0;
-    EVP_EncryptUpdate(ctx, encryptedData, &encryptedLength, input, password.length());
-
-    int finalLength = 0;
-    EVP_EncryptFinal_ex(ctx, encryptedData + encryptedLength, &finalLength);
-    encryptedLength += finalLength;
-
-    // Conversion des données chiffrées en Base64
-    BIO *bio, *b64;
-    BUF_MEM *bufferPtr;
-
-    b64 = BIO_new(BIO_f_base64());
-    bio = BIO_new(BIO_s_mem());
-    bio = BIO_push(b64, bio);
-
-    BIO_write(bio, encryptedData, encryptedLength);
-    BIO_flush(bio);
-    BIO_get_mem_ptr(bio, &bufferPtr);
-
-    string encryptedPassword(bufferPtr->data, bufferPtr->length);
-
-    // Nettoyage
-    EVP_CIPHER_CTX_free(ctx);
-    BIO_free_all(bio);
-
-    return encryptedPassword;
-}
-
-string PasswordManager::DecryptPassword(const string &encryptedPassword) {
-    // Conversion de la chaîne Base64 en données binaires
-    BIO *bio, *b64;
-    b64 = BIO_new(BIO_f_base64());
-    BIO_write(b64, encryptedPassword.c_str(), encryptedPassword.size());
-    BIO *bio_mem = BIO_new(BIO_s_mem());
-    bio = BIO_push(b64, bio_mem);
-    std::vector<unsigned char> encryptedData(encryptedPassword.size(), 0);
-
-    int decryptedLength = 0;
-    decryptedLength = BIO_read(bio, &encryptedData[0], encryptedPassword.size());
-    BIO_free_all(bio);
-
-    // Initialisation du contexte de déchiffrement
-    EVP_CIPHER_CTX *ctx = EVP_CIPHER_CTX_new();
-    EVP_DecryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, key, iv);
-
-    // Déchiffrement des données
-    unsigned char decryptedData[512];
-    int decryptedDataLength = 0;
-
-    if (EVP_DecryptUpdate(ctx, reinterpret_cast<unsigned char*>(&decryptedData[0]), &decryptedDataLength, encryptedData.data(), decryptedLength) != 1) {
-        // Gestion de l'erreur
-        return "Decryption Error 1";
-    }
-
-
-
-    int finalLength = 0;
-    if (EVP_DecryptFinal_ex(ctx, reinterpret_cast<unsigned char*>(&decryptedData[0]) + decryptedDataLength, &finalLength) != 1) {
-        // Gestion de l'erreur finale
-        return "Decryption Error 2";
-    }
-
-
-    decryptedDataLength += finalLength;
-
-    // Nettoyage
-    EVP_CIPHER_CTX_free(ctx);
-
-    // Conversion des données déchiffrées en une chaîne
-    string decryptedPassword(reinterpret_cast<const char *>(&decryptedData[0]), decryptedDataLength);
-
-    return decryptedPassword;
-}
