@@ -18,9 +18,11 @@ int PasswordManager::AddPassword(unsigned char *ciphertext, unsigned char *key, 
     ciphertext_len = manager.encrypt(password, password_str.length(), key, iv ,ciphertext);
     printf("Ciphertext is:\n");
     BIO_dump_fp (stdout, (const char *)ciphertext, ciphertext_len);
+    cout << ciphertext_len << endl;
 
-    Password newPassword(url, username, string(reinterpret_cast<char*>(ciphertext), ciphertext_len));
+    Password newPassword(url, username, string(reinterpret_cast<char*>(ciphertext)), ciphertext_len);
 
+    cout << newPassword.getCipherLen() << endl;
     passwordList.push_back(newPassword);
 
     cout << "Password added!\n";
@@ -30,6 +32,7 @@ int PasswordManager::AddPassword(unsigned char *ciphertext, unsigned char *key, 
 
     if (answer == 'y' || answer == 'Y')
     {
+        //WIP -- Assertion failed: (it != m_value.object->end()), function operator[], file json.hpp,.
         manager.AddPassword(ciphertext, key, iv);
     }
     else
@@ -42,7 +45,7 @@ int PasswordManager::AddPassword(unsigned char *ciphertext, unsigned char *key, 
 }
 
 void PasswordManager::ViewPasswords(unsigned char *ciphertext, int ciphertext_len, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext)
-{   
+{
     int decryptedtext_len = 0;
     if (passwordList.empty())
     {
@@ -55,9 +58,10 @@ void PasswordManager::ViewPasswords(unsigned char *ciphertext, int ciphertext_le
              << endl;
         for (size_t i = 0; i < passwordList.size(); ++i)
         {
+	        unsigned char* password = (unsigned char*) passwordList[i].getPassword().c_str(); 
             cout << "Site: " << passwordList[i].getUrl() << endl;
             cout << "Username: " << passwordList[i].getUsername() << endl;
-            decryptedtext_len = manager.decrypt(ciphertext, ciphertext_len, key, iv, decryptedtext);
+            decryptedtext_len = manager.decrypt(password, passwordList[i].getCipherLen(), key, iv, decryptedtext);
             cout << "Password: " << decryptedtext << endl;
             cout << "-------------------" << endl;
         }
@@ -83,8 +87,8 @@ void PasswordManager::DeletePassword()
         {
             cout << "Deleted password for site: " << url << endl;
             passwordList.erase(passwordList.begin() + i);
-            PasswordManager::SavePasswordsToJson(); // Mettre à jour le fichier JSON après la suppression
-            return;                                 // Sortir de la boucle dès que le mot de passe est trouvé et supprimé
+            PasswordManager::SavePasswordsToJson(); 
+            return;
         }
     }
     cout << "No password found for site: " << url << endl;
@@ -115,14 +119,16 @@ void PasswordManager::ChangePassword()
                 cout << "Enter the old password: ";
                 cin >> oldPassword;
 
+                //TODO: decrypt the old password
                 if (passwordList[i].getPassword() == oldPassword)
                 {
                     cout << "Enter the new password: ";
                     cin >> newPassword;
-
+                    //TODO: encrypt the new password
                     passwordList[i].setPassword(newPassword);
 
                     cout << "Password changed for site: " << url << endl;
+
                     PasswordManager::SavePasswordsToJson();
                     return;
                 }

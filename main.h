@@ -14,33 +14,36 @@
 #include <vector>
 #include <string>
 
-
 using namespace std;
 using json = nlohmann::json;
-
-
-
 
 class Password
 {
 public:
-    Password(const string &url, const string &username, const string &password)
-        : url_(url), username_(username), password_(password) {}
+    Password(const string &url, const string &username, const string &password, int cipherlen)
+        : url_(url), username_(username), password_(password), cipherlen_(cipherlen) {}
 
     const string &getUrl() const { return url_; }
     const string &getUsername() const { return username_; }
     const string &getPassword() const { return password_; }
+    int getCipherLen() const { return cipherlen_; }
 
+    //TODO: add key and iv
     void setUsername(const string &username) { username_ = username; }
     void setPassword(const string &password) { password_ = password; }
+    void setCipherLen(int cipherlen) { cipherlen_ = cipherlen; }
 
 private:
     string url_;
     string username_;
     string password_;
+    int cipherlen_;
+
+
 };
 
-class PasswordManager {
+class PasswordManager
+{
 public:
     string EncryptPassword(const string &password);
     int encrypt(unsigned char *plaintext, int plaintext_len, unsigned char *key, unsigned char *iv, unsigned char *ciphertext);
@@ -53,6 +56,7 @@ public:
     void DeletePassword();
     void ViewPasswords(unsigned char *ciphertext, int ciphertext_len, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext);
     void ChangePassword();
+
 private:
     std::vector<Password> passwordList;
 };

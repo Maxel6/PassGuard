@@ -4,8 +4,6 @@
 #include "nlohmann/json.hpp"
 #include "main.h"
 
-
-
 PasswordManager manager;
 
 int PasswordManager::menu(unsigned char *ciphertext, unsigned char *key, unsigned char *iv, unsigned char *decryptedtext)
@@ -23,7 +21,6 @@ int PasswordManager::menu(unsigned char *ciphertext, unsigned char *key, unsigne
              << "\n5. Help"
              << "\n0. Quit"
              << "\nChoose an option: ";
-
 
         if (cin >> choice && choice >= 0 && choice <= 5)
         {
@@ -72,65 +69,24 @@ int PasswordManager::menu(unsigned char *ciphertext, unsigned char *key, unsigne
     }
 }
 
-
-
-
-// int main()
-// {
-//     OpenSSL_add_all_algorithms();
-//     ERR_load_crypto_strings();
-//     //initialisation de la clé
-//     unsigned char key[32] ;
-//     RAND_bytes(key, sizeof(key));
-//     //initialisation de l'iv
-//     unsigned char iv[16];
-//     RAND_bytes(iv, sizeof(iv));
-    
-//     unsigned char ciphertext[128];
-//     unsigned char decryptedtext[128];
-    
-//     int decryptedtext_len, ciphertext_len;
-//     unsigned char *plaintext =
-//         (unsigned char *)"C'est mon bois";
-
-//     ciphertext_len = manager.encrypt (plaintext, strlen ((char *)plaintext), key, iv,
-//                               ciphertext);
-     
-//     printf("Ciphertext is:\n");
-//     BIO_dump_fp (stdout, (const char *)ciphertext, ciphertext_len);
-
-//     decryptedtext_len = manager.decrypt(ciphertext, ciphertext_len, key, iv,
-//                                 decryptedtext);
-
-//     decryptedtext[decryptedtext_len] = '\0';
-
-//     /* Show the decrypted text */
-//     printf("Decrypted text is:\n");
-//     printf("%s\n", decryptedtext);
-//     // manager.LoadPasswordsFromJson();
-//     // while(manager.menu())
-//     // {}
-//     // manager.SavePasswordsToJson();
-
-//     return 0;
-// }
-int main (void) {
+int main(void)
+{
 
     OpenSSL_add_all_algorithms();
     ERR_load_crypto_strings();
-    //initialisation de la clé
-    unsigned char key[32] ;
+    // initialisation de la clé
+    unsigned char key[32];
     RAND_bytes(key, sizeof(key));
-    //initialisation de l'iv
+    // initialisation de l'iv
     unsigned char iv[16];
     RAND_bytes(iv, sizeof(iv));
-    
+
     unsigned char ciphertext[128];
     unsigned char decryptedtext[128];
-    
-    manager.LoadPasswordsFromJson();
-    while(manager.menu(ciphertext, key, iv, decryptedtext))
-    {}
-    manager.SavePasswordsToJson();
 
+    manager.LoadPasswordsFromJson();
+    while (manager.menu(ciphertext, key, iv, decryptedtext))
+    {
+    }
+    manager.SavePasswordsToJson();
 }
