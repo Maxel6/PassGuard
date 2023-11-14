@@ -1,63 +1,82 @@
 #include "main.h"
 
-void PasswordManager::SavePasswordsToJson()
+vector<unsigned char> PasswordManager::loadFromJson(const string& filename) {
+    ifstream inputFile(filename);
+    if (!inputFile.is_open()) {
+        cout << "Could not open file: " << filename << endl;
+        return vector<unsigned char>();
+    }
+
+    json encrypted_json;
+    inputFile >> encrypted_json;
+
+    // Extraire la chaîne Base64 de la structure JSON
+    string base64_encoded = encrypted_json["data"];
+
+    // Décoder la chaîne Base64 en vecteur d'octets
+    vector<unsigned char> decrypted_data = base64_decode(base64_encoded);
+
+    // Déchiffrer les données avec AES-256-CBC
+
+    return decrypted_data;
+}
+
+
+
+// void PasswordManager::SavePasswordsToJson(unsigned char key[32 ], unsigned char iv[16]) {
+//     json data;
+
+//     // Ajouter chaque mot de passe à la structure JSON
+  
+//     for (const Password &password : passwordList) {
+//         json entry;
+//         entry["url"] = password.getUrl();
+//         entry["username"] = password.getUsername();
+//         entry["password"] = password.getPassword();
+//         data.push_back(entry);
+//     }
+//     // Convertir la structure JSON en une chaîne JSON
+//     string json_content = data.dump();
+
+//     // Chiffrer la chaîne JSON
+//     vector<unsigned char> encrypted_data = manager.encryptData(vector<unsigned char>(json_content.begin(), json_content.end()), key, iv);
+
+//     // Convertir le vecteur d'octets en une chaîne encodée en Base64
+//     string encoded_json = base64_encode(encrypted_data);
+
+//     // Sauvegarder la chaîne JSON encodée en Base64 dans un fichier
+//     ofstream outputFile("password.json");
+//     outputFile << encoded_json;
+//     outputFile.close();
+//     cout << "saved" << endl;
+// }
+
+void PasswordManager::SavePasswordsToJson(unsigned char key[32], unsigned char iv[16])
 {
     json data;
 
-    for (const Password &password : passwordList)
-    {
+    // Ajouter chaque mot de passe à la structure JSON
+    for (const Password &password : passwordList) {
         json entry;
         entry["url"] = password.getUrl();
         entry["username"] = password.getUsername();
-        std::vector<unsigned char> passwordData(password.getPassword().begin(), password.getPassword().end());
-        std::string base64Password = base64_encode(passwordData);
-
-        entry["password"] = base64Password;
-        entry["ciphertext_len"] = password.getCipherLen();
-        //TODO: save iv and key to json
+        entry["password"] = password.getPassword();
         data.push_back(entry);
     }
 
-    ofstream outputFile("passwords.json");
-    outputFile << data.dump(4);
+    string json_content = data.dump();
+
+    vector<unsigned char> encrypted_data = manager.encryptData(
+        vector<unsigned char>(json_content.begin(), json_content.end()), key, iv
+    );
+
+    string base64_encoded = base64_encode(encrypted_data);
+
+    json encrypted_json;
+    encrypted_json["data"] = base64_encoded;
+
+    ofstream outputFile("password.json");
+    outputFile << encrypted_json.dump();
     outputFile.close();
-}
 
-void PasswordManager::LoadPasswordsFromJson()
-{
-    ifstream inputFile("passwords.json");
-    if (!inputFile.is_open())
-    {
-        cout << "No saved passwords found." << endl;
-        return;
-    }
-
-    json data;
-    inputFile >> data;
-
-    if (data.empty())
-    {
-        cout << "No saved passwords found in the JSON file." << endl;
-        return;
-    }
-
-    for (const json &entry : data)
-    {
-        string url = entry["url"];
-        string username = entry["username"];
-        std::string base64Password = entry["password"];
-        int ciphertext_len = entry["ciphertext_len"];
-        string iv = entry["iv"];
-        string key = entry["key"];
-
-        //TODO: load iv and key to json
-        std::vector<unsigned char> passwordData = base64_decode(base64Password);
-
-        // Convertir les données binaires en une chaîne de caractères
-        std::string password(passwordData.begin(), passwordData.end());
-        Password newPassword(url, username, password, ciphertext_len);
-        passwordList.push_back(newPassword);
-    }
-
-    cout << "Passwords loaded from passwords.json" << endl;
 }
