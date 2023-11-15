@@ -26,7 +26,6 @@ struct PasswordDialogData
 
 vector<Password> passwordList;
 PasswordManager manager;
-unsigned char key[32] = "0123456789012345678901234567890";
 unsigned char iv[16] = "012345678901234";
 void switch_to_listbox(GtkButton *button, SwitchViewSaveParams *params);
 int isJsonFileEmpty(const std::string &filename);
@@ -60,6 +59,7 @@ int main(int argc, char *argv[])
     static gulong modify_button_handler_id = 0;
     static gulong delete_button_handler_id = 0;
     // Créer une instance du gestionnaire de mots de passe
+    string s = show_password_dialog();
     gtk_init(&argc, &argv);
 
     builder = gtk_builder_new();
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
     gtk_widget_set_margin_bottom(GTK_WIDGET(function_name), margin_bttm);
 
     // window size
-    gtk_window_set_default_size(GTK_WINDOW(fenetre_principale), 800, 200);
+    gtk_window_set_default_size(GTK_WINDOW(fenetre_principale), 800, 600);
 
     ////////////////////////////////////////////////////////////////
 
@@ -434,20 +434,19 @@ std::string show_password_dialog()
     GtkWidget *dialog = gtk_dialog_new_with_buttons("Enter Password",
                                                     NULL,
                                                     GTK_DIALOG_MODAL,
-                                                    "_OK",
+                                                    "_login",
                                                     GTK_RESPONSE_OK,
                                                     NULL);
 
     // Récupérer la zone de contenu de la fenêtre
-    GtkWidget *content_area = gtk_dialog_get_content_area(GTK_DIALOG(dialog));
 
     // Ajouter une boîte d'entrée de texte à la zone de contenu
     GtkWidget *entry = gtk_entry_new();
     gtk_entry_set_visibility(GTK_ENTRY(entry), FALSE); // Cacher les caractères du mot de passe
-    gtk_container_add(GTK_CONTAINER(content_area), entry);
+    gtk_container_add(GTK_CONTAINER(gtk_dialog_get_content_area(GTK_DIALOG(dialog))), entry);
 
     // Ajouter un bouton "OK" à la fenêtre de dialogue
-    GtkWidget *ok_button = gtk_dialog_add_button(GTK_DIALOG(dialog), "OK", GTK_RESPONSE_OK);
+    GtkWidget *ok_button = gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
 
     // Connecter la fonction de rappel au bouton "OK"
     PasswordDialogData data = {dialog, entry, ""};
@@ -512,7 +511,7 @@ void delete_password(GtkButton *button, SwitchViewSaveParams *params)
                                                         GTK_DIALOG_MODAL,
                                                         GTK_MESSAGE_ERROR,
                                                         GTK_BUTTONS_OK,
-                                                        "Icorrect password");
+                                                        "Icorrect URL or password");
             gtk_dialog_run(GTK_DIALOG(dialog));
             gtk_widget_destroy(dialog);
             return;
